@@ -69,6 +69,35 @@ footer{
     background-color: blue;
     display: flex;
     justify-content: space-between;
+    
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 70px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+label{
+    display: block;
+    padding: 5px;
+    color: white;
+}
+
+input,textarea{
+    padding: 5px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 15%;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    
 }
 
 
