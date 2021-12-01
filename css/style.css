@@ -74,8 +74,8 @@ footer{
 
 form{
     margin: 0 auto;
-    width: 400px;
-    padding: 70px;
+    width: 300px;
+    padding: 30px;
     background-color: blue;
     border-radius: 10px;
 }
@@ -124,5 +124,20 @@ img.fondohome{
 
 main.home{
     position: relative;
+}
+
+img.contactobasket{
+    width: 100%;
+    height: 100%;
+}
+
+img.accesobasket{
+    width: 100%;
+    height: 100%;
+}
+
+img.registrobasket{
+    width: 100%;
+    height: 100%;
 }
 
