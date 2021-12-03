@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Registro</title>
 </head>
 <body>
@@ -21,13 +22,13 @@
     </header>
     <main>
         <h1>BIENVENIDO A NBAstats</h1>
-            <form action="">
+            <form name="registro" id="registro" action="">
                 <label for="">Nombre de usuario</label>
-                <input type="text">
+                <input type="text" name="nombre" id="nombreregistro" required>
                 <label for="">Correo electrónico</label>
-                <input type="email">
+                <input type="email" name="email" id="emailregistro" required>
                 <label for="">Contraseña</label>
-                <input type="text">
+                <input type="password" name="password" id="passwordregistro" required>
                 <button type="submit">REGÍSTRATE</button>
             </form>
             <img src="img/registrobasket.jpg" class="registrobasket">

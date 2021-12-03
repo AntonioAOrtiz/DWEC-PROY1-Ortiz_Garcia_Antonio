@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Contacto</title>
 </head>
 <body>
@@ -21,13 +22,13 @@
     </header>
     <main>
         <h1>CONTÁCTANOS</h1>
-            <form action="">
+            <form name="contacto" id="contacto" action="">
                 <label for="">Nombre</label>
-                <input type="text">
+                <input type="text" name="nombre" id="nombrecontacto" required>
                 <label for="">Correo electrónico</label>
-                <input type="email">
+                <input type="email" name="email" id="emailcontacto" required>
                 <label for="">Mensaje</label>
-                <textarea placeholder="Escribe tu mensaje aquí."></textarea>
+                <textarea placeholder="Escribe tu mensaje aquí." name="mensaje" id="mensajecontacto" required></textarea>
                 <button type="submit">ENVIAR</button>
             </form>
             <img src="img/contactobasket.jpg" class="contactobasket">
