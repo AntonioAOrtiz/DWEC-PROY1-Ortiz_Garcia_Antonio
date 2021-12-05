@@ -22,12 +22,12 @@
     </header>
     <main>
         <h1>BIENVENIDO A NBAstats</h1>
-            <form name="registro" id="registro" action="">
-                <label for="">Nombre de usuario</label>
+            <form name="registro" id="registro" onsubmit="return validaRegistro()">
+                <label for="nombreregistro">Nombre de usuario</label>
                 <input type="text" name="nombre" id="nombreregistro" required>
-                <label for="">Correo electrónico</label>
+                <label for="emailregistro">Correo electrónico</label>
                 <input type="email" name="email" id="emailregistro" required>
-                <label for="">Contraseña</label>
+                <label for="passwordregistro">Contraseña</label>
                 <input type="password" name="password" id="passwordregistro" required>
                 <button type="submit">REGÍSTRATE</button>
             </form>

@@ -22,10 +22,10 @@
     </header>
     <main>
         <h1>BIENVENIDO A NBAstats</h1>
-            <form name="acceso" id="acceso" action="">
-                <label for="">Nombre de Usuario</label>
+            <form name="acceso" id="acceso" onsubmit="return validaAcceso()">
+                <label for="nombreacceso">Nombre de Usuario</label>
                 <input type="text" name="nombre" id="nombreacceso" required>
-                <label for="">Contraseña</label>
+                <label for="passwordacceso">Contraseña</label>
                 <input type="password" name="password" id="passwordacceso" required>
                 <button type="submit">ACCEDE</button>
             </form>

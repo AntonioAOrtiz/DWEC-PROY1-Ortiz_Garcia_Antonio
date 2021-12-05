@@ -22,12 +22,12 @@
     </header>
     <main>
         <h1>CONTÁCTANOS</h1>
-            <form name="contacto" id="contacto" action="">
-                <label for="">Nombre</label>
+            <form name="contacto" id="contacto" onsubmit="return validaContacto()">
+                <label for="nombrecontacto">Nombre</label>
                 <input type="text" name="nombre" id="nombrecontacto" required>
-                <label for="">Correo electrónico</label>
+                <label for="emailcontacto">Correo electrónico</label>
                 <input type="email" name="email" id="emailcontacto" required>
-                <label for="">Mensaje</label>
+                <label for="mensajecontacto">Mensaje</label>
                 <textarea placeholder="Escribe tu mensaje aquí." name="mensaje" id="mensajecontacto" required></textarea>
                 <button type="submit">ENVIAR</button>
             </form>

@@ -86,7 +86,7 @@ form{
 
 label{
     display: block;
-    padding: 5px;
+    padding: 15px;
     color: white;
 }
 
@@ -105,12 +105,11 @@ textarea{
 
 button{
     margin-top: 20px;
-    margin-left: 15%;
+    margin-left: 28%;
     background-color: red;
     color: white;
     border-radius: 10px;
     width: 40%;
-    
     
 }
 
