@@ -17,7 +17,7 @@ function carrusel(contenedor){
                 contador = imagenes.length - 1;
             }
         }else if(target == adelante){
-            if(contador < imagenes.length - -1){
+            if(contador < imagenes.length  -1){
                 img.src = imagenes[contador + 1];
                 contador ++;
             }else{
