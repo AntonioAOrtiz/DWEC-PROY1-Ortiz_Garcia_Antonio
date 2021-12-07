@@ -25,6 +25,7 @@ a{
 
 li>a{
     color:white;
+    font-weight: bold;
 }
 
 li>a:hover{
@@ -32,6 +33,7 @@ li>a:hover{
     background-color: white;
     color: blue;
     transition: all 0.2s ease-in;
+    font-weight: bold;
 }
 
 
