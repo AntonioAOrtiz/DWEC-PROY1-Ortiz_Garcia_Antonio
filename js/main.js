@@ -31,7 +31,7 @@ function validaAcceso(evento){
     
     this.submit();
     document.write("Usuario y contraseña válidos");
-    setTimeout( function() {window.location.href = "index.html";}, 3000 );
+    setTimeout( function() {window.location.href = "index.html";}, 2000 );
     
 }
 
@@ -60,7 +60,7 @@ function validaContacto(evento){
         alert("No se ha introducido el email");
         return;
     }
-    else if( !(condicionesEmail.test(email)) ) {
+    else if( (condicionesEmail.test(email)) ) {
         alert("La dirección de email no es válida.")
         return;
     }
@@ -69,13 +69,14 @@ function validaContacto(evento){
         return;
     }
 
-    else if(mensaje.value.length > 255){
+    else if(mensaje.length > 255){
         alert("El mensaje debe tener como máximo 255 caracteres.")
         return;
     }
 
     this.submit();
     document.write("Mensaje enviado correctamente");
+    setTimeout( function() {window.location.href = "index.html";}, 2000 );
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -121,5 +122,5 @@ function validaRegistro(evento){
 
     this.submit();
     document.write("Te has registrado correctamente");
-    setTimeout( function() {window.location.href = "index.html";}, 3000 );
+    setTimeout( function() {window.location.href = "index.html";}, 2000 );
 }
