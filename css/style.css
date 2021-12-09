@@ -300,6 +300,10 @@ table.jugadores{
     table.jugadores{
         font-size: 11px;
     }
+
+    form{
+        width: 200px;
+    }
 }
 
 @media (max-width: 480px){
@@ -351,6 +355,8 @@ table.jugadores{
        font-size: 8px;
    }
 }
+
+
 
 
 
