@@ -282,6 +282,10 @@ table.jugadores{
         margin: 1vh;
     }
 
+    ul{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 555px){
@@ -297,5 +301,63 @@ table.jugadores{
         font-size: 11px;
     }
 }
+
+@media (max-width: 480px){
+    li>a{
+        font-size: 6px;
+    }
+
+    li>a:hover{
+        font-size: 8px;
+        background-color: white;
+        color: blue;
+        transition: all 0.2s ease-in;
+        font-weight: bold;
+    }
+
+
+    
+    div>a{
+        font-size: 12px;
+        width: 50%;
+    }
+
+    span.bienvenida{
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    div.bienvenida{
+        width:50%;
+        position: absolute;
+        top:5%;
+        left:5%;
+    }
+
+    thead>tr>td{
+        
+        font-size: 10px;
+    }
+
+    img.logo{
+        height:100px
+    }
+
+   td>tr{
+       font-size: 8px;
+   }
+
+   tbody{
+       font-size: 8px;
+   }
+}
+
+
+
+
+
+   
+
+
 
 
