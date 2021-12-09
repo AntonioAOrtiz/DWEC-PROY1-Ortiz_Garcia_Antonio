@@ -189,7 +189,7 @@ main.home{
 }
 
 .contenedor img{
-    width: 300px;
+    
     height: 300px;
                 
     display: block;
@@ -223,4 +223,79 @@ img.logo{
 table.jugadores{
     width: 100%;
 }
+
+/* RESPONSIVE */
+@media (max-width: 780px){
+    header{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    
+    li>a{
+        font-size: 14px;
+        
+    }
+
+    li>img{
+        height: 16px;
+    
+    }
+
+    header>a{
+        font-size: 2rem;
+        margin:0 auto;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    span.bienvenida{
+        font-size: 1.2rem;
+    }
+
+    div>a{
+        font-size: 14px;
+        width: 40%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    li>a:hover{
+        font-size: 16px;
+        background-color: white;
+        color: blue;
+        transition: all 0.2s ease-in;
+        font-weight: bold;
+    }
+
+    table.jugadores{
+        margin: 1vh;
+    }
+
+}
+
+@media (max-width: 555px){
+    ul{
+        text-align: center;
+    }
+
+    li>a{
+        font-size: 10px;
+    }
+
+    table.jugadores{
+        font-size: 11px;
+    }
+}
+
 
