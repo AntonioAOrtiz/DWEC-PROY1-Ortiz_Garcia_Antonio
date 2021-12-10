@@ -31,7 +31,7 @@ function validaAcceso(evento){
     
     this.submit();
     document.write("Usuario y contraseña válidos");
-    setTimeout( function() {window.location.href = "index.html";}, 2000 );
+    setTimeout( function() {window.location.href = "index.html";}, 4000 );
     
 }
 
@@ -76,7 +76,7 @@ function validaContacto(evento){
 
     this.submit();
     document.write("Mensaje enviado correctamente");
-    setTimeout( function() {window.location.href = "index.html";}, 2000 );
+    setTimeout( function() {window.location.href = "index.html";}, 4000 );
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -122,5 +122,5 @@ function validaRegistro(evento){
 
     this.submit();
     document.write("Te has registrado correctamente");
-    setTimeout( function() {window.location.href = "index.html";}, 2000 );
+    setTimeout( function() {window.location.href = "index.html";}, 4000 );
 }

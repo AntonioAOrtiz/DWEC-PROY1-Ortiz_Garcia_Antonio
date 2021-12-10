@@ -189,9 +189,7 @@ main.home{
 }
 
 .contenedor img{
-    
     height: 300px;
-                
     display: block;
 }
 
@@ -223,6 +221,21 @@ img.logo{
 table.jugadores{
     width: 100%;
 }
+
+div.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div>div.atras{
+   font-size: 50px;
+}
+
+div>div.adelante{
+    font-size: 50px;
+ }
+
 
 /* RESPONSIVE */
 @media (max-width: 780px){
@@ -287,6 +300,8 @@ table.jugadores{
     }
 
 }
+
+
 
 @media (max-width: 555px){
     ul{
@@ -356,7 +371,25 @@ table.jugadores{
    }
 }
 
+/* ANIMACIÓN ERROR 404 */
 
+h1.error{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
 
