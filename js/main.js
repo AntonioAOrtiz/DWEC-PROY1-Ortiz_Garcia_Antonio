@@ -2,15 +2,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("acceso").addEventListener('submit', validaAcceso); 
 });
 
+const espacio = /^\s+$/;
+const nombreUsuario = /^[a-zA-Z0-9\_\-]{4,16}$/;
+const condicionesPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+const condicionesEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
+const nombreContacto = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+
 function validaAcceso(evento){
     evento.preventDefault();
     let nombre = document.getElementById("nombreacceso").value;
     let password = document.getElementById("passwordacceso").value;
-    let espacio = /^\s+$/;
-    let nombreUsuario = /^[a-zA-Z0-9\_\-]{4,16}$/;
-    let condicionesPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
     
-
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
         alert("No se ha introducido el nombre de usuario");
         return;
@@ -44,11 +46,8 @@ function validaContacto(evento){
     let nombre = document.getElementById("nombrecontacto").value;
     let email = document.getElementById("emailcontacto").value;
     let mensaje = document.getElementById("mensajecontacto").value;
-    let espacio = /^\s+$/;
-    let nombreContacto = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
-    let condicionesEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
     
-
+    
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
         alert("No se ha introducido el nombre");
         return;
@@ -88,12 +87,7 @@ function validaRegistro(evento){
     let nombre = document.getElementById("nombreregistro").value;
     let email = document.getElementById("emailregistro").value;
     let password = document.getElementById("passwordregistro").value;
-    let espacio = /^\s+$/;
-    let nombreUsuario = /^[a-zA-Z0-9\_\-]{4,16}$/;
-    let condicionesEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
-    let condicionesPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
     
-
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
         alert("No se ha introducido el nombre de usuario");
         return;
