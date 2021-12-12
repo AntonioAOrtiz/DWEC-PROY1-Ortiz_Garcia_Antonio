@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
     <title>Los Angeles Lakers</title>
 </head>
-<body>
+<body onload="crearTablaProducto(datos);">
     <header>
         <a href="index.html">NBAstats</a>
         <nav>
@@ -22,7 +21,7 @@
     </header>
     <main>
         <img src="img/lakers.png" class="logo">
-        <section>
+        <section id="contiTabla">
             <table class="jugadores">
                 <thead>
                     <tr>
@@ -151,5 +150,6 @@
             <li><img src="img/twitter.png"></li>
         </ul>
     </footer>
+    <script src="js/creatabla.js"></script>
 </body>
 </html>

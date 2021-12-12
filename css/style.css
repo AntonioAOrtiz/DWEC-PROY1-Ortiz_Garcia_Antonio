@@ -126,6 +126,11 @@ button{
     
 }
 
+#pintar{
+    color: white;
+    font-weight: bold;
+}
+
 /* ESTILOS TABLAS */
 table{
     border-bottom:blue 1px solid;
@@ -145,9 +150,10 @@ thead>tr>td{
     font-size: 20px;
 }
 
-#pintar{
-    color: white;
-    font-weight: bold;
+thead>tr{
+    font-family: 'Passion One', cursive;
+    color: blue;
+    font-size: 20px;
 }
 
 
