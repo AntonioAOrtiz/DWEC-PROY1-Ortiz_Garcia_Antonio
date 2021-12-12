@@ -1,6 +1,8 @@
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+/* ESTILOS GENERALES*/
 *, *::before, *::after{    
     font-family: 'Roboto', serif;
     box-sizing: border-box;
@@ -40,7 +42,6 @@ li>img{
     background-color: white;
 }
 
-
 section{
     margin: 4vh;
     display: flex;
@@ -55,8 +56,6 @@ table{
     font-weight: bold;
 }
 
-
-
 header{
     background-color: blue;
     display: flex;
@@ -70,7 +69,6 @@ header>a{
     margin: 2vh;
 }
 
-
 h1{
     font-family:'Passion One', cursive;
     text-align: center;
@@ -80,6 +78,7 @@ h1{
     margin-bottom: 30px;
 }
 
+/* ESTILOS FORMULARIOS */
 footer{
     background-color: blue;
     display: flex;
@@ -127,6 +126,7 @@ button{
     
 }
 
+/* ESTILOS TABLAS */
 table{
     border-bottom:blue 1px solid;
     width: 37%;
@@ -145,9 +145,14 @@ thead>tr>td{
     font-size: 20px;
 }
 
+#pintar{
+    color: white;
+    font-weight: bold;
+}
 
 
 
+/* ESTILOS BIENVENIDA A LA WEB */
 div.bienvenida{
     width:50%;
     position: absolute;
@@ -180,8 +185,6 @@ img.fondohome{
     object-fit: cover;
 }
 
-
-
 main.home{
     position: relative;
 }
@@ -196,7 +199,7 @@ main.home{
     display: block;
 }
 
-
+/* ESTILOS IMÁGENES EN PÁGINA DE FORMULARIO */
 img.contactobasket{
     width: 100%;
     height: 100%;
@@ -212,6 +215,7 @@ img.registrobasket{
     height: 100%;
 }
 
+/* ESTILOS PÁGINA "PRODUCTO" */
 table.jugadores{
     width: 50%;
 }
@@ -225,6 +229,7 @@ table.jugadores{
     width: 100%;
 }
 
+/* ESTILOS CARRUSEL */
 div.contenedor{
     display: flex;
     justify-content: center;
@@ -336,8 +341,6 @@ div>div.adelante{
         transition: all 0.2s ease-in;
         font-weight: bold;
     }
-
-
     
     div>a{
         font-size: 12px;
@@ -375,7 +378,6 @@ div>div.adelante{
 }
 
 /* ANIMACIÓN ERROR 404 */
-
 h1.error{
     animation-duration: 3s;
     animation-name: slidein;
@@ -396,7 +398,6 @@ h1.error{
 }
 
 /* MODO OSCURO */
-
 .oscuro{ 
     background-color:black; 
     color: white; 
@@ -420,7 +421,6 @@ button.btn-dark{
 }
 
 /* MODO CLARO */
-
 .claro{ 
     background-color: white; 
     color: black; 

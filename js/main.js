@@ -8,10 +8,17 @@ const condicionesPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-
 const condicionesEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
 const nombreContacto = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 
+let numero1 = Math.floor((Math.random() * (10-1))+ 1 );
+let numero2 = Math.floor((Math.random() * (10-1))+ 1 );
+let captcha = numero1 + numero2;
+pintar.innerHTML = numero1 + " + " + numero2;
+
 function validaAcceso(evento){
     evento.preventDefault();
     let nombre = document.getElementById("nombreacceso").value;
     let password = document.getElementById("passwordacceso").value;
+    
+    let input = document.getElementById("inputCaptchaAcceso").value;
     
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
         alert("No se ha introducido el nombre de usuario");
@@ -30,6 +37,10 @@ function validaAcceso(evento){
         alert("La contraseña debe tener: \nEntre 8 y 15 caracteres.\nAl menos letra mayúscula.\nAl menos una letra minúscula.\nAl menos un dígito.\nSin espacios en blanco.\nAl menos un carácter especial.\nTodos estos requisitos son para su propia seguridad.");
         return;
     }
+    else if(input != captcha){
+        alert("Captcha incorrecto");
+        return;
+    }
     
     this.submit();
     document.write("Usuario y contraseña válidos");
@@ -46,6 +57,8 @@ function validaContacto(evento){
     let nombre = document.getElementById("nombrecontacto").value;
     let email = document.getElementById("emailcontacto").value;
     let mensaje = document.getElementById("mensajecontacto").value;
+ 
+    let input = document.getElementById("inputCaptchaContacto").value;
     
     
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
@@ -72,6 +85,10 @@ function validaContacto(evento){
         alert("El mensaje debe tener como máximo 255 caracteres.")
         return;
     }
+    else if(input != captcha){
+        alert("Captcha incorrecto");
+        return;
+    }
 
     this.submit();
     document.write("Mensaje enviado correctamente");
@@ -87,6 +104,8 @@ function validaRegistro(evento){
     let nombre = document.getElementById("nombreregistro").value;
     let email = document.getElementById("emailregistro").value;
     let password = document.getElementById("passwordregistro").value;
+
+    let input = document.getElementById("inputCaptchaRegistro").value;
     
     if( nombre == null || nombre.length == 0 || espacio.test(nombre) ) {
         alert("No se ha introducido el nombre de usuario");
@@ -111,6 +130,10 @@ function validaRegistro(evento){
     else if( !(condicionesPassword.test(password)) )
     {
         alert("La contraseña debe tener: \nEntre 8 y 15 caracteres.\nAl menos letra mayúscula.\nAl menos una letra minúscula.\nAl menos un dígito.\nSin espacios en blanco.\nAl menos un carácter especial.\nTodos estos requisitos son para su propia seguridad.");
+        return;
+    }
+    else if(input != captcha){
+        alert("Captcha incorrecto");
         return;
     }
 
