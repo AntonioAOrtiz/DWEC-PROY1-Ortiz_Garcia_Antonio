@@ -36,6 +36,9 @@ li>a:hover{
     font-weight: bold;
 }
 
+li>img{
+    background-color: white;
+}
 
 
 section{
