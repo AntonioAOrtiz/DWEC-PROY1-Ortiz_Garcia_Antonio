@@ -436,6 +436,10 @@ button.btn-light{
     color: black;
 }
 
+.claro tr{
+    background-color: white;
+}
+
 .claro header>a{
     color: black;
 }
