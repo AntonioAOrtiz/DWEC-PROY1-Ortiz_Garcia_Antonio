@@ -392,6 +392,57 @@ h1.error{
   }
 }
 
+/* MODO OSCURO */
+
+.oscuro{ 
+    background-color:black; 
+    color: white; 
+}
+
+button.btn-dark{
+    background-color: black; 
+    color: white; 
+}
+
+.oscuro h1{
+    color: white;
+}
+
+.oscuro tr{
+    background-color: black;
+}
+
+.oscuro thead>tr>td{
+    color: white;
+}
+
+/* MODO CLARO */
+
+.claro{ 
+    background-color: white; 
+    color: black; 
+}
+
+button.btn-light{
+    background-color: white; 
+    color: black; 
+}
+
+.claro h1{
+    color: black;
+}
+
+.claro thead>tr>td{
+    color: black;
+}
+
+.claro header>a{
+    color: black;
+}
+
+.claro li>a{
+    color: black;
+}
 
 
 

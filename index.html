@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrusel.js"></script>
     <script src="js/creatabla.js"></script>
+    <script src="js/cambiarmodo.js"></script>
     <title>Inicio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="index.html">NBAstats</a>
         <nav>
             <ul>
@@ -24,7 +25,7 @@
     <main class="home">
         
         <img src="img/fondohome.jpg" class="fondohome">
-            <div class="bienvenida">
+            <div id="bienvenida" class="bienvenida">
                 <h1>LÍDERES NBA</h1>
                 <span class="bienvenida">Bienvenido a NBAstats, aquí encontrarás información de las estadísticas de la mejor liga de baloncesto del mundo.</span>
                 <a href="registro.html">REGÍSTRATE</a>
@@ -41,7 +42,7 @@
                 </div>
             </div>
         <section id="contTabla">
-            <table>
+            <table id="tabla1">
                 <thead>
                     <tr>
                         <td colspan="3">PUNTOS</td>
@@ -73,7 +74,7 @@
                     <td>26.0</td>
                 </tr>
             </table>
-            <table>
+            <table id="tabla2">
                 <thead>
                     <tr>
                         <td colspan="3">ASISTENCIAS</td>
@@ -105,7 +106,7 @@
                     <td>8.1</td>
                 </tr>    
             </table>
-            <table>
+            <table id="tabla3">
                 <thead>
                     <tr>
                         <td colspan="3">REBOTES</td>
@@ -137,7 +138,7 @@
                     <td>11.7</td>
                 </tr>    
             </table>
-            <table>
+            <table id="tabla4">
                 <thead>
                     <tr>
                         <td colspan="3">TAPONES</td>
@@ -169,7 +170,7 @@
                     <td>2.0</td>
                 </tr>  
             </table>
-            <table>
+            <table id="tabla5">
                 <thead>
                     <tr>
                         <td colspan="3">ROBOS</td>
@@ -203,11 +204,12 @@
             </table>
             
             <button id="botonMinuto" onclick="crearTabla(datosTabla)">Líderes en Minutos</button>
-
+            <button type="button" class="btn-dark" onclick="modoOscuro()">Modo Oscuro</button>
+            <button type="button" class="btn-light" onclick="modoClaro()">Modo Claro</button>
         </section>
         
     </main>
-    <footer>
+    <footer id="footer">
         <ul>
             <li><a href="error404.html">COOKIES</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
@@ -220,6 +222,6 @@
             <li><img src="img/instagram.png"></li>
             <li><img src="img/twitter.png"></li>
         </ul>
-    </footer>
+    </footer id="footer">
 </body>
 </html>
