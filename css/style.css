@@ -259,6 +259,12 @@ div>div.adelante{
     margin-bottom: 30px;
 }
 
+#lakers{
+    margin-left: 4vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 780px){
