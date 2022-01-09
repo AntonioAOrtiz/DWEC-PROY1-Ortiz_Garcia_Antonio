@@ -1,5 +1,3 @@
-
-
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
@@ -12,6 +10,9 @@ xhr.addEventListener("readystatechange", function () {
         htmlLakers.innerHTML = datos.full_name + " " + "("+datos.abbreviation+")" + "<br>" + "Ciudad: " + datos.city + "<br>" + "Conferencia: " + datos.conference + "<br>" + "División: " + datos.division;
         
 	}
+    else{
+        htmlLakers.innerHTML = "Cargando...";
+    }
 });
 
 xhr.open("GET", "https://free-nba.p.rapidapi.com/teams/14");

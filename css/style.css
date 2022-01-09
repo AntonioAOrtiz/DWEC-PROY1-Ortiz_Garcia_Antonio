@@ -265,6 +265,13 @@ div>div.adelante{
     font-size: 20px;
 }
 
+#lebron{
+    margin-left: 4vh;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 125px;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 780px){

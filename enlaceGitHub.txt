@@ -1,1 +1,3 @@
-https://github.com/AntonioAOrtiz/DWEC-PROY1-Ortiz_Garcia_Antonio
+Enlace al repositorio github: https://github.com/AntonioAOrtiz/DWEC-PROY1-Ortiz_Garcia_Antonio
+
+Despliegue de la página web: https://antonioaortiz.github.io/DWEC-PROY1-Ortiz_Garcia_Antonio/
